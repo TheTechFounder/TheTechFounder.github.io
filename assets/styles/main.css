@@ -1,9 +1,3 @@
-/***********************************************************************************
-  
-Setup
-  
-************************************************************************************/
-
 html,
 body {
     width: 100%;
@@ -12,11 +6,6 @@ body {
     overflow: auto;
 }
 
-/***********************************************************************************
-  
-Typography
-  
-************************************************************************************/
 
 body {
 	font-family: "Source Sans Pro", sans-serif;
@@ -34,17 +23,12 @@ h1 {
 	margin-bottom: 2%;
 	
 }
-
-
-
-
 h2 {
 	font-size: 268%;
 	margin-bottom: 7.3%;
-	animation: type 4s steps(60, end);
+	
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
-
 h3 {
 	font-size: 135%;
 	margin-bottom: -15%;
@@ -65,7 +49,17 @@ p {
 	text-shadow: 6px 0px #000000;
 	border-color: #000000;
 	border-width: thin;
+	
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
 }
+
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
 
 a {
     text-decoration: none;
@@ -82,48 +76,7 @@ p a {
     border-bottom: 1px solid;
 }
 
-/***********************************************************************************
-  
-Icons
-  
-************************************************************************************/
 
-@font-face { 
-    font-family: "ionicons"; 
-    src: url("../icons/ionicons.eot?v=1.4.1"); 
-    src: url("../icons/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"), 
-         url("../icons/ionicons.ttf?v=1.4.1") format("truetype"), 
-         url("../icons/ionicons.woff?v=1.4.1") format("woff"), 
-         url("../icons/ionicons.svg?v=1.4.1#Ionicons") format("svg"); 
-    font-weight: normal; 
-    font-style: normal; 
-}
-
-.icon { 
-    font-family: "ionicons"; 
-    speak: none; 
-    font-style: normal; 
-    font-weight: normal; 
-    font-variant: normal; 
-    text-transform: none; 
-    text-rendering: auto; 
-    line-height: 1; 
-    -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale; 
-    
-    display: inline-block; 
-}
-
-.icon.twitter:before { content: "\f243"; }
-.icon.facebook:before { content: "\f231"; }
-.icon.email:before { content: "\f10f"; }
-.icon.submit:before { content: "\f16c"; }
-
-/***********************************************************************************
-  
-Containers
-  
-************************************************************************************/
 
 .row {
     width: 100%;
@@ -164,54 +117,7 @@ body::after {
     content: "";
 }
 
-/***********************************************************************************
-  
-Header
-  
-************************************************************************************/
 
-#header {
-    border-bottom: 1px dashed;
-    
-    line-height: 200px;
-    
-    display: none;
-}
-
-#header .content span.logo {
-    background-image: url("../images/logo.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 80px;
-    
-    display: block;
-    
-    padding-left: 100px;
-}
-
-#header .status {
-    height: 1px;
-    
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-}
-
-#header .status span {
-    border-left: 1px solid;
-    
-    font-size: 12px;
-    line-height: 20px;
-    
-    width: 1px;
-    height: 21px;
-    
-    padding-left: 5px;
-    
-    position: absolute;
-    top: -10px;
-    right: -6px;
-}
 
 /***********************************************************************************
   
@@ -296,28 +202,38 @@ input:focus {
 	margin-top: 1.4%;
 }
 
+.css-typing
+{
+	width: 13.8em; 
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: .1em solid;
+	-webkit-animation: blink .5s step-end infinite alternate,type 5s steps(26, end);
+	animation: blink .5s step-end infinite alternate,
+	type 3s steps(30, end);
+			
+	
+	
+	padding-left: 363px;
+}
+@keyframes blink{ 50% { border-color: transparent; } }
+@-webkit-keyframes blink{ 50% { border-color: transparent; } }
+@keyframes type{
+    from { width: 0; }
+	
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+	
+}
+
+
+
 #post-subscribe {
     display: none;
 }
 
-/***********************************************************************************
-  
-Social
-  
-************************************************************************************/
 
-#social a.icon {
-    border-radius: 50%;
-    
-    font-size: 18px;
-    line-height: 40px;
-    text-align: center;
-    
-    width: 40px;
-    height: 40px;
-    
-    float: left;
-    margin-right: -5px;
-}
 #pre-subscribe #copy h1 strong {
 }
