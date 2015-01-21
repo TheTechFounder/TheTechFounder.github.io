@@ -11,7 +11,8 @@ body {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 300;
 	font-size: 117%;
-	margin-top: -5%;	
+	margin-top: -5%;
+
 }
 
 h1, h2, h3 {
@@ -21,13 +22,13 @@ h1, h2, h3 {
 h1 {
 	font-size: 286%;
 	margin-bottom: 2%;
-	
+	margin-left: -2%;
 }
 h2 {
 	font-size: 268%;
 	margin-bottom: 7.3%;
-	
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	
 }
 h3 {
 	font-size: 135%;
@@ -50,15 +51,15 @@ p {
 	border-color: #000000;
 	border-width: thin;
 	
+	
+	
   white-space: nowrap;
   overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
+ 
+  
 }
 
-p:nth-child(2){
-  animation: type2 8s steps(60, end);
-}
+
 
 
 a {
@@ -204,17 +205,19 @@ input:focus {
 
 .css-typing
 {
-	width: 13.8em; 
+	width: 13.6em;
 	white-space: nowrap;
 	overflow: hidden;
+	position: absolute;
+	left: 25%;
 	border-right: .1em solid;
 	-webkit-animation: blink .5s step-end infinite alternate,type 5s steps(26, end);
 	animation: blink .5s step-end infinite alternate,
 	type 3s steps(30, end);
-			
+	margin-left: 0%;
+	text-align: center;
+	max-width: 100%;
 	
-	
-	padding-left: 363px;
 }
 @keyframes blink{ 50% { border-color: transparent; } }
 @-webkit-keyframes blink{ 50% { border-color: transparent; } }
