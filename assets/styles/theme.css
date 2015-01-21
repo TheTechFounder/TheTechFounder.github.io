@@ -31,7 +31,7 @@ Body
 ************************************************************************************/
 
 body {
-    background-image: url('../images/bg.jpg');
+   background-image: url('../images/bg3.jpg');
 }
 
 body::after {
@@ -70,6 +70,7 @@ input[type="email"] {
 	color: rgba(255,255,255,0.85);
 }
 
+
 ::-webkit-input-placeholder {
    color: rgba(255, 255, 255, 0.85);
 }
@@ -94,6 +95,7 @@ input[type="email"] {
 .button:hover {
     background-color: #49b266;
     color: #ffffff;
+
 }
 
 /***********************************************************************************
