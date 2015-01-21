@@ -38,7 +38,7 @@ $(function() {
 				$.ajax({
    					 url: "//formspree.io/thetechfounder@gmail.com", 
   						  method: "POST",
-  							  data: $this.serialize(),
+  							  data: {message: $this.serialize()},
   								  dataType: "json"
 								  
 });
