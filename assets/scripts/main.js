@@ -35,25 +35,13 @@ $(function() {
 
             if (isValid) {
                 // If email is is valid, submit form through ajax
-                $.ajax({
-                    type: "GET",
-                    url: $this.attr('action'),
-                    data: $this.serialize(),
-                    dataType: 'json',
-                    contentType: "application/json; charset=utf-8",
-                    error: function(jqXHR, textStatus, errorThrown) {
-                        alert("Could not connect to the registration server.");
-                    },
-                    success: function(data) {
-                        if (data.result != "success") {
-                            // Something went wrong, parse data.msg string and display message
-                            alert("Sorry, something went wrong... try again.");
-                        } else {
-                            $('#pre-subscribe').fadeOut(500);
-                            $('#post-subscribe').delay(500).fadeIn(500);
-                        }
-                    }
-                });
+				$.ajax({
+   					 url: "//formspree.io/thetechfounder@gmail.com", 
+  						  method: "POST",
+  							  data: {message: "hello!"},
+  								  dataType: "json"
+});
+                
             }
 
             return false;
