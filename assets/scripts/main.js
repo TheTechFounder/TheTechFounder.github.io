@@ -36,10 +36,11 @@ $(function() {
             if (isValid) {
                 // If email is is valid, submit form through ajax
 				$.ajax({
-   					// url: "//formspree.io/thetechfounder@gmail.com", 
-  						//  method: "POST",
-  						//	  data: {message: "hello!"},
-  						//		  dataType: "json"
+   					 url: "//formspree.io/thetechfounder@gmail.com", 
+  						  method: "POST",
+  							  data: $this.serialize(),
+  								  dataType: "json"
+								  
 });
                 
             }
